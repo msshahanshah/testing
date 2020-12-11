@@ -1,2 +1,39 @@
-<head>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document-PSI</title>
+  </head>
+  <body>
+    <form
+      action="https://stagingcheckout.psigate.com/HTMLPost/HTMLMessenger"
+      method="post"
+    >
+      <!-- HELLOOOOO -->
+      <input
+        type="TEXT"
+        name="StoreKey"
+        value="merchantcardcapture200024"
+      />StoreKey<br />
+      <!-- <input type="hidden" > -->
+      <input type="TEXT" name="SubTotal" value="8.00" />SubTotal<br />
+      <input type="TEXT" name="Email" value="paraskd@ymail.com" />Email<br />
+      <input type="TEXT" name="PaymentType" value="CC" />PaymentType<br />
+      <input type="TEXT" name="CardAction" value="0" />CardAction<br />
+      <!-- <input type="text" name="CustomerRefNo" value="123456789" /> -->
+
+      <input
+        type="TEXT"
+        name="CustomerRefNo"
+        value="123456789"
+      />CustomerRefNo<br />
+      <!-- <input
+        type="TEXT"
+        name="CustomerLanguage"
+        value="EN_CA"
+      />CustomerLanguage<br /> -->
+      <input type="SUBMIT" value="PAY" />
+    </form>
+  </body>
+</html>
